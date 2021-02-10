@@ -5,7 +5,7 @@ import Home from '../src/components/home/Home';
 import SignUp from '../src/components/signup/SignUp';
 import SignIn from '../src/components/signin/SignIn';
 import Doctors from '../src/components/doctors/Doctors';
-import * as ReactBootstrap from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import './App.css';
 
 function App() {
@@ -18,26 +18,18 @@ function App() {
 	};
 	return (
 		<div className='App'>
-			<ReactBootstrap.Navbar bg='light' expand='lg'>
-				<ReactBootstrap.Navbar.Brand href='#home'>
-					2nd Opinion
-				</ReactBootstrap.Navbar.Brand>
-				<ReactBootstrap.Navbar.Toggle aria-controls='basic-navbar-nav' />
-				<ReactBootstrap.Navbar.Collapse id='basic-navbar-nav'>
-					<ReactBootstrap.Nav className='mr-auto'>
-						<ReactBootstrap.Nav.Link href='#home'>Home</ReactBootstrap.Nav.Link>
-						<ReactBootstrap.Nav.Link href='#signup'>
-							Sign up
-						</ReactBootstrap.Nav.Link>
-						<ReactBootstrap.Nav.Link href='#SignIn'>
-							Sign in
-						</ReactBootstrap.Nav.Link>
-						<ReactBootstrap.Nav.Link href='#doctors'>
-							Doctors
-						</ReactBootstrap.Nav.Link>
-					</ReactBootstrap.Nav>
-				</ReactBootstrap.Navbar.Collapse>
-			</ReactBootstrap.Navbar>
+			<Navbar bg='light' expand='md'>
+				<Navbar.Brand href='#home'>2nd Opinion</Navbar.Brand>
+				<Navbar.Toggle aria-controls='basic-navbar-nav' />
+				<Navbar.Collapse id='basic-navbar-nav'>
+					<Nav className='mr-auto'>
+						<Nav.Link href='#home'>Home</Nav.Link>
+						<Nav.Link href='#signup'>Sign up</Nav.Link>
+						<Nav.Link href='#SignIn'>Sign in</Nav.Link>
+						<Nav.Link href='#doctors'>Doctors</Nav.Link>
+					</Nav>
+				</Navbar.Collapse>
+			</Navbar>
 
 			<Navigation
 				loggedIn={loggedIn}
