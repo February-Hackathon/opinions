@@ -14,7 +14,7 @@ const SignUp = () => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		Axios({
-			url: '',
+			url: 'http://localhost:8000/users/',
 			method: 'POST',
 			data: formState,
 		}).then(() => {

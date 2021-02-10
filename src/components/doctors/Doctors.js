@@ -1,11 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Doctors = () => {
-    return (
-        <div>
-            Doctors
-        </div>
-    );
+const Doctors = ({ loggedIn }) => {
+	return <div style={{ display: loggedIn ? 'block' : 'none' }}>Doctors</div>;
 };
 
 export default Doctors;
