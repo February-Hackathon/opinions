@@ -72,7 +72,7 @@ const SignUp = () => {
 					placeholder='Confirm Password'
 					className='re_passwordInput'
 				/>
-				<button type='submit' className='registrationFormSubmit hvr-grow'>
+				<button type='submit' className='registrationFormSubmit'>
 					Submit
 				</button>
 			</form>
