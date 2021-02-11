@@ -1,7 +1,10 @@
 import React from 'react';
 import Axios from 'axios';
 import { useDropzone } from 'react-dropzone';
-import './fileupload.css';
+import './FileUpload.css';
+import FUImage from './Screen Shot 2021-02-10 at 12.59 1.jpg'
+import ImgOne from './96.png'
+import ImgTwo from './98.png'
 
 const FileUpload = ({ loggedIn }) => {
 	const { acceptedFiles, getRootProps, getInputProps } = useDropzone();
@@ -11,7 +14,7 @@ const FileUpload = ({ loggedIn }) => {
 			{file.path} - {file.size} bytes
 		</li>
 	));
-	const handleClick = (event) => {
+	const handleClickSend = (event) => {
 		event.preventDefault();
 		const url = 'http://localhost:8000/pdocs/';
 		const headers = { Authorization: `token ${localStorage.token}` };
@@ -25,15 +28,19 @@ const FileUpload = ({ loggedIn }) => {
 	};
 	return (
 		<section className='container'>
-			<div {...getRootProps({ className: 'dropzone' })}>
-				<input {...getInputProps()} />
-				<p>Drag 'n' drop some files here, or click to select files</p>
+			<div className='uploadsTitle'>Upload Your Medical History</div>
+			<div className='dropBoxContainer'>
+				<div {...getRootProps({ className: 'dropzone' })} className='dropBox'>
+					<input {...getInputProps()} />
+					<img src={ImgOne} alt='imgOne' className='imgOne'/>
+					<img src={ImgTwo} alt='imgTwo' className='imgTwo'/>
+				</div>
 			</div>
 			<aside>
-				<h4>Files</h4>
 				<ul>{files}</ul>
 			</aside>
-			<button onClick={handleClick}>Send</button>
+			<button onClick={handleClickSend} className='uploadsBtn'>Upload</button><br/>
+			<img src={FUImage} alt='fileUploadBackground' className='uploadsFooter'/>
 		</section>
 	);
 };
