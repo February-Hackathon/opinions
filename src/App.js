@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import SignUp from './components/signup/SignUp';
 import SignIn from './components/signin/SignIn';
 import Doctors from './components/doctors/Doctors';
+import AllUploads from './components/alluploads/AllUploads'
 import FileUpload from '../src/components/fileupload/FileUpload'
 import { Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
@@ -49,6 +50,9 @@ function App() {
 						<LinkContainer to='fileupload' component={FileUpload}>
 							<Nav.Link>File Upload</Nav.Link>
 						</LinkContainer>
+						<LinkContainer to='alluploads' component={AllUploads}>
+							<Nav.Link>All Upload</Nav.Link>
+						</LinkContainer>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
@@ -81,6 +85,13 @@ function App() {
 					exact
 					render={() => {
 						return <FileUpload loggedIn={loggedIn} />;
+					}}
+				/>
+				<Route
+					path='/alluploads'
+					exact
+					render={() => {
+						return <AllUploads loggedIn={loggedIn} />;
 					}}
 				/>
 			</main>
