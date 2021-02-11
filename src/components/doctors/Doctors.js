@@ -18,7 +18,7 @@ const Doctors = ({ loggedIn }) => {
 					</div>
 					<div className='doctorImages'>
 						<div id='doc1'>
-							<img src={doc1} width='150px' height='150px' border-radius='30%' alt='doc1'/>
+							<img src={doc1} width='150px' height='150px' alt='doc1'/>
 							<p>DR. LENNART
 								<br/>
 								Joined: 2020

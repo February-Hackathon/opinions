@@ -133,3 +133,219 @@
         top: 850px;
      } 
 }
+
+@media only screen and (min-width: 768px) {
+
+    .body3 {
+        position: absolute;
+        top: 20px;
+        width: 200px;
+        left: 100px;
+    }
+
+    .doctorTitle {
+        position: absolute;
+        height: 49px;
+        width: 350px;
+        left: 180px;
+        top: 80px;
+        /* border-radius: 0px; */
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+        color: #2CB4FF;
+    }
+
+    #doc1 {
+        position: absolute;
+        width: 400px;
+        height: 257px;
+        top: 180px;
+     } 
+
+     #doc2 {
+        position: absolute;
+        width: 400px;
+        height: 257px;
+        top: 180px;
+        left: 300px;
+     } 
+
+     #doc3 {
+        position: absolute;
+        width: 400px;
+        height: 257px;
+        top: 450px;
+     } 
+
+     #doc4 {
+        position: absolute;
+        width: 400px;
+        height: 257px;
+        top: 450px;
+        left: 300px;
+     } 
+     
+     .doctorSubmit {
+        position: absolute;
+        width: 350px;
+        height: 45px;
+        left: 190px;
+        top: 750px;
+        background: #AA8CFF;
+        border-radius: 4px;
+    }
+
+    #doc5 {
+        position: absolute;
+        width: 180px;
+        height: 240px;
+        left: 600px;
+        top: 850px;
+     } 
+}
+
+@media only screen and (min-width: 992px) {
+
+    .body3 {
+        position: absolute;
+        top: 20px;
+        width: 200px;
+        left: 100px;
+    }
+
+    .doctorTitle {
+        position: absolute;
+        height: 49px;
+        width: 350px;
+        left: 180px;
+        top: 80px;
+        /* border-radius: 0px; */
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+        color: #2CB4FF;
+    }
+
+    #doc1 {
+        position: absolute;
+        width: 400px;
+        height: 257px;
+        top: 180px;
+     } 
+
+     #doc2 {
+        position: absolute;
+        width: 400px;
+        height: 257px;
+        top: 180px;
+        left: 300px;
+     } 
+
+     #doc3 {
+        position: absolute;
+        width: 400px;
+        height: 257px;
+        top: 450px;
+     } 
+
+     #doc4 {
+        position: absolute;
+        width: 400px;
+        height: 257px;
+        top: 450px;
+        left: 300px;
+     } 
+     
+     .doctorSubmit {
+        position: absolute;
+        width: 350px;
+        height: 45px;
+        left: 190px;
+        top: 750px;
+        background: #AA8CFF;
+        border-radius: 4px;
+    }
+
+    #doc5 {
+        position: absolute;
+        width: 180px;
+        height: 240px;
+        left: 700px;
+        top: 850px;
+     } 
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .body3 {
+        position: absolute;
+        top: 20px;
+        width: 200px;
+        left: 100px;
+    }
+
+    .doctorTitle {
+        position: absolute;
+        height: 49px;
+        width: 350px;
+        left: 180px;
+        top: 80px;
+        /* border-radius: 0px; */
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 49px;
+        color: #2CB4FF;
+    }
+
+    #doc1 {
+        position: absolute;
+        width: 400px;
+        height: 257px;
+        top: 180px;
+     } 
+
+     #doc2 {
+        position: absolute;
+        width: 400px;
+        height: 257px;
+        top: 180px;
+        left: 300px;
+     } 
+
+     #doc3 {
+        position: absolute;
+        width: 400px;
+        height: 257px;
+        top: 450px;
+     } 
+
+     #doc4 {
+        position: absolute;
+        width: 400px;
+        height: 257px;
+        top: 450px;
+        left: 300px;
+     } 
+     
+     .doctorSubmit {
+        position: absolute;
+        width: 350px;
+        height: 45px;
+        left: 190px;
+        top: 750px;
+        background: #AA8CFF;
+        border-radius: 4px;
+    }
+
+    #doc5 {
+        position: absolute;
+        width: 180px;
+        height: 240px;
+        left: 700px;
+        top: 850px;
+     } 
+}
