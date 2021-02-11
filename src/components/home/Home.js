@@ -26,8 +26,8 @@ const Home = () => {
 				</p>
 				<h2>Fast access to international specialists </h2>
 				<p>
-					Thanks to our partership with Cigna you can have access to specialists
-					in different countries
+					Thanks to our partnership with Cigna you can have access to
+					specialists in different countries
 				</p>
 				<img className='imgCigna' src={imgCigna} alt='MainDoc' />
 				<h2>Easy medical history sharing</h2>
