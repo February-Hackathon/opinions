@@ -1,12 +1,14 @@
 import { React, useState } from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import Navigation from '../src/components/navigation/Navigation';
-import Home from '../src/components/home/Home';
-import SignUp from '../src/components/signup/SignUp';
-import SignIn from '../src/components/signin/SignIn';
-import Doctors from '../src/components/doctors/Doctors';
+// import Navigation from './components/navigation/Navigation';
+import Home from './components/home/Home';
+import SignUp from './components/signup/SignUp';
+import SignIn from './components/signin/SignIn';
+import Doctors from './components/doctors/Doctors';
 import { Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from './imgLogo.png';
 import './App.css';
 
 function App() {
@@ -21,7 +23,9 @@ function App() {
 		<div className='App'>
 			<Navbar bg='light' expand='md'>
 				<LinkContainer to='/home' component={Home}>
-					<Navbar.Brand>2nd Opinion</Navbar.Brand>
+					<Navbar.Brand id='navText'>
+						<img className='logo' src={logo} alt='logo' /> 2nd Opinion
+					</Navbar.Brand>
 				</LinkContainer>
 				<Navbar.Toggle aria-controls='basic-navbar-nav' />
 				<Navbar.Collapse id='basic-navbar-nav'>
@@ -32,9 +36,12 @@ function App() {
 						<LinkContainer to='/signup' component={SignUp}>
 							<Nav.Link>Sign up</Nav.Link>
 						</LinkContainer>
-						<LinkContainer to='/signin' component={SignIn}>
-							<Nav.Link>Sign in</Nav.Link>
-						</LinkContainer>
+						{!loggedIn && (
+							<LinkContainer to='/signin' component={SignIn}>
+								<Nav.Link>Log in</Nav.Link>
+							</LinkContainer>
+						)}{' '}
+						{loggedIn && <Nav.Link onClick={handleLogout}>Log out</Nav.Link>}
 						<LinkContainer to='doctors' component={Doctors}>
 							<Nav.Link>Doctors</Nav.Link>
 						</LinkContainer>
@@ -42,11 +49,11 @@ function App() {
 				</Navbar.Collapse>
 			</Navbar>
 
-			<Navigation
+			{/* <Navigation
 				loggedIn={loggedIn}
 				setLoggedIn={setLoggedIn}
 				handleLogout={handleLogout}
-			/>
+			/> */}
 			<main>
 				<Route path='/home' component={Home} />
 				<Route path='/' exact render={() => <Redirect to='/home' />} />

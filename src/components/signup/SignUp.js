@@ -5,7 +5,7 @@ import './signup.css'
 import signUpImg from './signup_pic.png';
 
 const SignUp = () => {
-    const initialState = {
+	const initialState = {
 		username: '',
 		email: '',
 		password: '',
@@ -16,7 +16,7 @@ const SignUp = () => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		Axios({
-			url: 'http://localhost:8000/users/',
+			url: 'https://storytime-drf.herokuapp.com/users/',
 			method: 'POST',
 			data: formState,
 		}).then(() => {
@@ -27,6 +27,7 @@ const SignUp = () => {
 	const handleChange = (event) => {
 		setFormState({ ...formState, [event.target.id]: event.target.value });
 	};
+
     return (
         <div>
 			<div className='body2'>
@@ -76,8 +77,8 @@ const SignUp = () => {
 			<div id='signUp-img'>
 				<img src={signUpImg} alt='signUpImg'/>
 			</div>
-        </div>
-    );
+		</div>
+	);
 };
 
 export default SignUp;

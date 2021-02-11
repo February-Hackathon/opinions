@@ -1,6 +1,21 @@
 .App {
 	text-align: center;
-	font-family: 'Fjalla One', sans-serif;
+	/* font-family: 'Fjalla One', sans-serif; */
+	/* color: #2cb4ff; */
+}
+
+.navbar-default {
+	color: #2cb4ff;
+}
+
+#navText {
+	font-family: Fjalla One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 40px;
+	text-align: center;
+	color: #2cb4ff;
 }
 
 .App-logo {
@@ -8,6 +23,10 @@
 	pointer-events: none;
 }
 
+.logo {
+	max-width: 100%;
+	max-height: 40px;
+}
 @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
 		animation: App-logo-spin infinite 20s linear;
