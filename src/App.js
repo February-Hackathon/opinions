@@ -5,8 +5,8 @@ import Home from './components/home/Home';
 import SignUp from './components/signup/SignUp';
 import SignIn from './components/signin/SignIn';
 import Doctors from './components/doctors/Doctors';
-import AllUploads from './components/alluploads/AllUploads'
-import FileUpload from '../src/components/fileupload/FileUpload'
+import AllUploads from './components/alluploads/AllUploads';
+import FileUpload from '../src/components/fileupload/FileUpload';
 import { Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
