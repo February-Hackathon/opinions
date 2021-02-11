@@ -27,7 +27,7 @@
 
     .emailInput {
         position: absolute;
-        width: 256px;
+        width: 300px;
         height: 40px;
         left: 55px;
         top: 210px;
@@ -36,7 +36,7 @@
 
     .passwordInput {
         position: absolute;
-        width: 256px;
+        width: 300px;
         height: 40px;
         left: 55px;
         top: 300px;
@@ -47,7 +47,7 @@
         position: absolute;
         width: 257px;
         height: 35px;
-        left: 58px;
+        left: 75px;
         top: 390px;
         background: #AA8CFF;
         border-radius: 4px;
@@ -118,9 +118,9 @@
 
     .signinSubmit {
         position: absolute;
-        width: 257px;
+        width: 250px;
         height: 45px;
-        left: 260px;
+        left: 265px;
         top: 390px;
         background: #AA8CFF;
         border-radius: 4px;
@@ -162,7 +162,7 @@
         position: absolute;
         height: 49px;
         width: 150px;
-        left: 115px;
+        left: 130px;
         top: 130px;
         /* border-radius: 0px; */
         font-style: normal;
@@ -174,7 +174,7 @@
 
     #email {
         position: absolute;
-        width: 256px;
+        width: 300px;
         height: 40px;
         left: 55px;
         top: 210px;
@@ -183,7 +183,7 @@
 
     #password {
         position: absolute;
-        width: 256px;
+        width: 300px;
         height: 40px;
         left: 55px;
         top: 300px;
@@ -193,8 +193,8 @@
     .signinSubmit {
         position: absolute;
         width: 257px;
-        height: 35px;
-        left: 58px;
+        height: 45px;
+        left: 75px;
         top: 390px;
         background: #AA8CFF;
         border-radius: 4px;
@@ -204,7 +204,7 @@
         position: absolute;
         width: 257px;
         height: 35px;
-        left: 60px;
+        left: 75px;
         top: 480px;
      }
 
@@ -236,8 +236,8 @@
     .signinTitle {
         position: absolute;
         height: 49px;
-        width: 150px;
-        left: 310px;
+        width: 190px;
+        left: 290px;
         top: 120px;
         /* border-radius: 0px; */
         font-style: normal;
@@ -311,8 +311,8 @@
 .signinTitle {
     position: absolute;
     height: 49px;
-    width: 150px;
-    left: 310px;
+    width: 190px;
+    left: 290px;
     top: 120px;
     /* border-radius: 0px; *
     font-style: normal;

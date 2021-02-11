@@ -1,4 +1,9 @@
 @media only screen and (max-width: 599px) {
+
+    .body4 {
+        margin: 75px 0 0 0;
+    }
+    
     .uploadsTitle {
         font-family: Fjalla One;
         font-style: normal;
