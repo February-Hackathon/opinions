@@ -3,6 +3,7 @@ import mainImg from './home main img.png';
 import MainDoc from './imgMainDoc.png';
 import imgCigna from './imgCigna.png';
 import imgTestimonials from './imgTestimonials.png';
+import imgHomeFooter from './imgHomeFooter.png';
 import './home.css';
 
 const Home = () => {
@@ -54,6 +55,21 @@ const Home = () => {
 						thorough in his explanations. She took extra time to assure I went
 						away more confident in a plan ”
 					</h3>
+				</div>
+				<div className='footer'>
+					<div className='footerText'>
+						<h4>Contact</h4>
+						<h3>
+							1216 2nd Street Southwest, <br />
+							Rochester, MN 55902 <br />
+							Phone: +1(507)255-5123
+							<br />
+							Email: info@2ndopinion.com
+						</h3>
+					</div>
+					<div className='footerImg'>
+						<img className='imgHomeFooter' src={imgHomeFooter} alt='footer' />
+					</div>
 				</div>
 			</div>
 		</div>
