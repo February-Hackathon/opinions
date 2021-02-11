@@ -31,7 +31,7 @@ const SignIn = ({ loggedIn, setLoggedIn }) => {
 	return (
 		<div>
 			<div className='body'>
-				<div className='signinTitle'>Sign In</div>
+				<div className='signinTitle'>Log In</div>
 				<form onSubmit={handleSubmit}>
 					<label htmlFor='email' className='emailLabel'>
 						{' '}

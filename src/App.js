@@ -51,7 +51,7 @@ function App() {
 							<Nav.Link>File Upload</Nav.Link>
 						</LinkContainer>
 						<LinkContainer to='alluploads' component={AllUploads}>
-							<Nav.Link>All Upload</Nav.Link>
+							<Nav.Link>All Uploads</Nav.Link>
 						</LinkContainer>
 					</Nav>
 				</Navbar.Collapse>
