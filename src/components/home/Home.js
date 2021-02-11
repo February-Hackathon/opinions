@@ -12,8 +12,8 @@ const Home = () => {
 				<img className='mainImg' src={mainImg} alt='main' />
 			</div>
 			<div className='buttonDiv'>
-				<input className='homeButtons' type='button' value='Sign In'></input>
-				<input className='homeButtons' type='button' value='Sign Up'></input>
+				<input className='homeButton1' type='button' value='Sign In'></input>
+				<input className='homeButton2' type='button' value='Sign Up'></input>
 			</div>
 			<div className='homeBody'>
 				<img className='mainDoc' src={MainDoc} alt='MainDoc' />
