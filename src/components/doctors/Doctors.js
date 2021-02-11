@@ -10,7 +10,6 @@ import doc5 from './doc5.png';
 
 
 const Doctors = ({ loggedIn }) => {
-<<<<<<< Updated upstream
 	// return <div style={{ display: loggedIn ? 'block' : 'none' }}>Doctors</div>;
 	return  <div>
 				<div className='body3'>
@@ -71,10 +70,6 @@ const Doctors = ({ loggedIn }) => {
 					<img src={doc5} alt='do5'/>
 				</div>
 			</div>;
-=======
-	return <div style={{ display: loggedIn ? 'block' : 'none' }}>Doctors
-	</div>;
->>>>>>> Stashed changes
 };
 
 export default Doctors;

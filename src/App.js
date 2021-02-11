@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import SignUp from './components/signup/SignUp';
 import SignIn from './components/signin/SignIn';
 import Doctors from './components/doctors/Doctors';
+import FileUpload from '../src/components/fileupload/FileUpload'
 import { Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -45,6 +46,9 @@ function App() {
 						<LinkContainer to='doctors' component={Doctors}>
 							<Nav.Link>Doctors</Nav.Link>
 						</LinkContainer>
+						<LinkContainer to='fileupload' component={FileUpload}>
+							<Nav.Link>File Upload</Nav.Link>
+						</LinkContainer>
 					</Nav>
 				</Navbar.Collapse>
 			</Navbar>
@@ -70,6 +74,13 @@ function App() {
 					exact
 					render={() => {
 						return <Doctors loggedIn={loggedIn} />;
+					}}
+				/>
+				<Route
+					path='/fileupload'
+					exact
+					render={() => {
+						return <FileUpload loggedIn={loggedIn} />;
 					}}
 				/>
 			</main>
