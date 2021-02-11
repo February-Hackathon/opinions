@@ -1,6 +1,6 @@
 import { React, useState } from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import Navigation from './components/navigation/Navigation';
+// import Navigation from './components/navigation/Navigation';
 import Home from './components/home/Home';
 import SignUp from './components/signup/SignUp';
 import SignIn from './components/signin/SignIn';

@@ -3,7 +3,7 @@ import Axios from 'axios';
 import { useHistory } from 'react-router-dom';
 
 const SignUp = () => {
-    const initialState = {
+	const initialState = {
 		username: '',
 		email: '',
 		password: '',
@@ -14,7 +14,7 @@ const SignUp = () => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		Axios({
-			url: 'http://localhost:8000/users/',
+			url: 'https://storytime-drf.herokuapp.com/users/',
 			method: 'POST',
 			data: formState,
 		}).then(() => {
@@ -25,9 +25,9 @@ const SignUp = () => {
 	const handleChange = (event) => {
 		setFormState({ ...formState, [event.target.id]: event.target.value });
 	};
-    return (
-        <div>
-            <div className='registrationTitle'>Register Below:</div>
+	return (
+		<div>
+			<div className='registrationTitle'>Register Below:</div>
 			<form onSubmit={handleSubmit}>
 				<label htmlFor='username' className='usernameLabel'>
 					Enter Username:{' '}
@@ -81,8 +81,8 @@ const SignUp = () => {
 			<div className='qualification'>
 				Password must be combination of at least 8 letters and numbers
 			</div>
-        </div>
-    );
+		</div>
+	);
 };
 
 export default SignUp;
