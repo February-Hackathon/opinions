@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
 import { useHistory } from 'react-router-dom';
+import './signup.css'
+import signUpImg from './signup_pic.png';
 
 const SignUp = () => {
 	const initialState = {
@@ -25,61 +27,55 @@ const SignUp = () => {
 	const handleChange = (event) => {
 		setFormState({ ...formState, [event.target.id]: event.target.value });
 	};
-	return (
-		<div>
-			<div className='registrationTitle'>Register Below:</div>
-			<form onSubmit={handleSubmit}>
-				<label htmlFor='username' className='usernameLabel'>
-					Enter Username:{' '}
-				</label>
-				<input
-					id='username'
-					onChange={handleChange}
-					value={formState.username}
-					placeholder='Username'
-					className='usernameInput'
-				/>
-				<br />
-				<label htmlFor='email' className='registrationEmailLabel'>
-					Enter Email:{' '}
-				</label>
-				<input
-					id='email'
-					onChange={handleChange}
-					value={formState.email}
-					placeholder='Email'
-					className='registrationEmailInput'
-				/>
-				<br />
-				<label htmlFor='password' className='registrationPasswordLabel'>
-					Enter Password:{' '}
-				</label>
-				<input
-					id='password'
-					onChange={handleChange}
-					value={formState.password}
-					placeholder='Password'
-					className='registrationPasswordInput'
-				/>
-				<br />
-				<label htmlFor='re_password' className='re_passwordLabel'>
-					Confirm Password:{' '}
-				</label>
-				<input
-					id='re_password'
-					onChange={handleChange}
-					value={formState.re_password}
-					placeholder='Confirm Password'
-					className='re_passwordInput'
-				/>
-				<button type='submit' className='registrationFormSubmit'>
-					Submit
-				</button>
-			</form>
-			<div className='qualification'>Email must be unique</div>
-			<br />
-			<div className='qualification'>
-				Password must be combination of at least 8 letters and numbers
+
+    return (
+        <div>
+			<div className='body2'>
+				<div className='signupTitle'>Sign Up</div>
+				<form onSubmit={handleSubmit}>
+					<input
+						id='username'
+						onChange={handleChange}
+						value={formState.username}
+						placeholder='Create Username'
+						className='usernameInput'
+					/>
+					<br />
+					<input
+						id='registrationEmailInput'
+						onChange={handleChange}
+						value={formState.email}
+						placeholder='Enter Email'
+						className='registrationEmailInput'
+					/>
+					<br />
+					<input
+						id='registrationPasswordInput'
+						onChange={handleChange}
+						value={formState.password}
+						placeholder='Create Password'
+						className='registrationPasswordInput'
+					/>
+					<br />
+					<input
+						id='re_password'
+						onChange={handleChange}
+						value={formState.re_password}
+						placeholder='Confirm Password'
+						className='re_passwordInput'
+					/>
+					<button type='submit' className='registrationFormSubmit'>
+						Submit
+					</button>
+				</form>
+				{/* <div className='qualification'>Email must be unique</div>
+				<br /> */}
+				<div className='qualification'>
+					*Password must be combination of at least 8 letters and numbers 
+				</div>
+			</div>
+			<div id='signUp-img'>
+				<img src={signUpImg} alt='signUpImg'/>
 			</div>
 		</div>
 	);
