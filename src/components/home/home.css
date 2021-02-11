@@ -21,15 +21,52 @@ h2 {
 	color: #2cb4ff;
 }
 
+h3 {
+	margin-top: 10px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+	color: #000000;
+}
+
+.homeBody {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 80%;
+	text-align: center;
+	margin: auto;
+}
 p {
+	justify-content: center;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: regular;
 	color: #000000;
 }
-img {
+.mainImg {
 	max-width: 100%;
 	max-height: 300px;
 	height: auto;
+	margin: auto;
+}
+
+.imgCigna {
+	max-width: 200px;
+	margin: auto;
+	justify-content: center;
+}
+.mainDoc {
+	width: 191px;
+	height: 183px;
+	margin: auto;
+}
+
+.buttonDiv {
+	display: flex;
+	justify-content: center;
 }
 
 .homeButtons {
@@ -51,4 +88,13 @@ img {
 	border-style: solid;
 	border-width: 1px;
 	color: #000000;
+}
+
+.testimonials {
+	display: flex;
+	align-items: center;
+}
+
+.imgTestimonials {
+	max-width: 125px;
 }
