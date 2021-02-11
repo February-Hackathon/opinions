@@ -103,6 +103,7 @@
 		left: 250px;
 		top: 130px;
 		/* border-radius: 0px; */
+        font-family: Fjalla One;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 36px;
@@ -163,6 +164,13 @@
 		top: 485px;
 		background: #aa8cff;
 		border-radius: 4px;
+		border: none;
+		color: white;
+	}
+
+    .registrationFormSubmit:hover {
+		cursor: pointer;
+		background-color: #7c4dff;
 	}
 
 	#signUp-img {
@@ -193,6 +201,7 @@
 		left: 250px;
 		top: 130px;
 		/* border-radius: 0px; */
+        font-family: Fjalla One;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 36px;
@@ -253,6 +262,13 @@
 		top: 485px;
 		background: #aa8cff;
 		border-radius: 4px;
+		border: none;
+		color: white;
+	}
+
+    .registrationFormSubmit:hover {
+		cursor: pointer;
+		background-color: #7c4dff;
 	}
 
 	#signUp-img {
@@ -283,6 +299,7 @@
 		left: 250px;
 		top: 130px;
 		/* border-radius: 0px; */
+        font-family: Fjalla One;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 36px;
@@ -343,6 +360,13 @@
 		top: 485px;
 		background: #aa8cff;
 		border-radius: 4px;
+		border: none;
+		color: white;
+	}
+
+    .registrationFormSubmit:hover {
+		cursor: pointer;
+		background-color: #7c4dff;
 	}
 
 	#signUp-img {
@@ -373,6 +397,7 @@
 		left: 250px;
 		top: 130px;
 		/* border-radius: 0px; */
+        font-family: Fjalla One;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 36px;
@@ -433,6 +458,13 @@
 		top: 485px;
 		background: #aa8cff;
 		border-radius: 4px;
+		border: none;
+		color: white;
+	}
+
+    .registrationFormSubmit:hover {
+		cursor: pointer;
+		background-color: #7c4dff;
 	}
 
 	#signUp-img {
