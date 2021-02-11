@@ -25,7 +25,7 @@
         color: #2CB4FF;
     }
 
-    #email {
+    .emailInput {
         position: absolute;
         width: 256px;
         height: 40px;
@@ -34,7 +34,7 @@
         border-radius: 3px;
     }
 
-    #password {
+    .passwordInput {
         position: absolute;
         width: 256px;
         height: 40px;
