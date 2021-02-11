@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
 
     .signupTitle {
         position: absolute;
@@ -23,8 +23,8 @@
         border-radius: 3px;
     }
 
-    .registrationEmailInput {
-        position: absolute;
+    #registrationEmailInput {
+        position: fixed;
         width: 256px;
         height: 40px;
         left: 55px;
@@ -32,7 +32,7 @@
         border-radius: 3px;
     }
 
-    .registrationPasswordInput {
+    #registrationPasswordInput {
         position: absolute;
         width: 256px;
         height: 40px;
@@ -76,10 +76,20 @@
         left: 75px;
         top: 525px;
      } 
-
 }
 
 @media only screen and (min-width: 600px) {
+
+    .body2 {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
     .signupTitle {
         position: absolute;
@@ -99,25 +109,25 @@
         position: absolute;
         width: 256px;
         height: 40px;
-        left: 200px;
+        left: 205px;
         top: 210px;
         border-radius: 3px;
     }
 
-    .registrationEmailInput {
+    #registrationEmailInput {
         position: absolute;
         width: 256px;
         height: 40px;
-        left: 55px;
-        top: 70px;
+        left: 205px;
+        top: 270px;
         border-radius: 3px;
     }
 
     .registrationPasswordInput {
         position: absolute;
-        width: 26px;
+        width: 256px;
         height: 40px;
-        left: 55px;
+        left: 205px;
         top: 330px;
         border-radius: 3px;
     }
@@ -154,7 +164,7 @@
         position: absolute;
         width: 180px;
         height: 240px;
-        left: 345px;
+        left: 415px;
         top: 765px;
      } 
     
