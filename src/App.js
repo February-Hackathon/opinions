@@ -36,9 +36,12 @@ function App() {
 						<LinkContainer to='/signup' component={SignUp}>
 							<Nav.Link>Sign up</Nav.Link>
 						</LinkContainer>
-						<LinkContainer to='/signin' component={SignIn}>
-							<Nav.Link>Sign in</Nav.Link>
-						</LinkContainer>
+						{!loggedIn && (
+							<LinkContainer to='/signin' component={SignIn}>
+								<Nav.Link>Log in</Nav.Link>
+							</LinkContainer>
+						)}{' '}
+						{loggedIn && <Nav.Link onClick={handleLogout}>Log out</Nav.Link>}
 						<LinkContainer to='doctors' component={Doctors}>
 							<Nav.Link>Doctors</Nav.Link>
 						</LinkContainer>
