@@ -28,7 +28,8 @@ const FileUpload = ({ loggedIn }) => {
 	};
 	return (
 		<section className='container'>
-			<div className='uploadsTitle'>Upload Your Medical History</div>
+			<div className='body4'>
+			<div className='uploadsTitle'>Upload Files Below</div>
 			<div className='dropBoxContainer'>
 				<div {...getRootProps({ className: 'dropzone' })} className='dropBox'>
 					<input {...getInputProps()} />
@@ -40,6 +41,7 @@ const FileUpload = ({ loggedIn }) => {
 				<ul>{files}</ul>
 			</aside>
 			<button onClick={handleClickSend} className='uploadsBtn'>Upload</button><br/>
+			</div>
 			<img src={FUImage} alt='fileUploadBackground' className='uploadsFooter'/>
 		</section>
 	);

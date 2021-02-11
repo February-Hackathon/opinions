@@ -11,7 +11,7 @@ import doc5 from './doc5.png';
 
 const Doctors = ({ loggedIn }) => {
 	// return <div style={{ display: loggedIn ? 'block' : 'none' }}>Doctors</div>;
-	return  <div>
+	return  <div style={{ display: loggedIn ? 'block' : 'none' }}>
 				<div className='body3'>
 					<div className='doctorTitle'>
 						Choose Your Specialist
