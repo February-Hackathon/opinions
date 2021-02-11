@@ -73,8 +73,8 @@
         position: absolute;
         width: 180px;
         height: 240px;
-        left: 75px;
-        top: 525px;
+        left: 85px;
+        top: 615px;
      } 
 }
 
@@ -100,7 +100,7 @@
         /* border-radius: 0px; */
         font-style: normal;
         font-weight: bold;
-        font-size: 48px;
+        font-size: 36px;
         line-height: 49px;
         color: #2CB4FF;
     }
@@ -185,7 +185,7 @@
     .signupTitle {
         position: absolute;
         height: 49px;
-        width: 150px;
+        width: 190px;
         left: 250px;
         top: 130px;
         /* border-radius: 0px; */
@@ -255,7 +255,7 @@
         position: absolute;
         width: 180px;
         height: 240px;
-        left: 400px;
+        left: 500px;
         top: 765px;
      } 
 }
@@ -346,7 +346,7 @@
         position: absolute;
         width: 180px;
         height: 240px;
-        left: 500px;
+        left: 650px;
         top: 765px;
      } 
 }
