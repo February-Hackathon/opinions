@@ -7,6 +7,7 @@ import SignIn from '../src/components/signin/SignIn';
 import Doctors from '../src/components/doctors/Doctors';
 import { Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
@@ -42,11 +43,11 @@ function App() {
 				</Navbar.Collapse>
 			</Navbar>
 
-			<Navigation
+			{/* <Navigation
 				loggedIn={loggedIn}
 				setLoggedIn={setLoggedIn}
 				handleLogout={handleLogout}
-			/>
+			/> */}
 			<main>
 				<Route path='/home' component={Home} />
 				<Route path='/' exact render={() => <Redirect to='/home' />} />
