@@ -16,7 +16,7 @@ const SignUp = () => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		Axios({
-			url: 'https://second-opinion-drf.herokuapp.com/users/',
+			url: 'https://storytime-drf.herokuapp.com/users/',
 			method: 'POST',
 			data: formState,
 		}).then(() => {

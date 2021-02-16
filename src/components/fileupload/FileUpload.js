@@ -27,22 +27,27 @@ const FileUpload = ({ loggedIn }) => {
 		});
 	};
 	return (
-		<section className='container'>
+		<section
+			className='container'
+			style={{ display: loggedIn ? 'block' : 'none' }}>
 			<div className='body4'>
-			<div className='uploadsTitle'>Upload Files Below</div>
-			<div className='dropBoxContainer'>
-				<div {...getRootProps({ className: 'dropzone' })} className='dropBox'>
-					<input {...getInputProps()} />
-					<img src={ImgOne} alt='imgOne' className='imgOne'/>
-					<img src={ImgTwo} alt='imgTwo' className='imgTwo'/>
+				<div className='uploadsTitle'>Upload Files Below</div>
+				<div className='dropBoxContainer'>
+					<div {...getRootProps({ className: 'dropzone' })} className='dropBox'>
+						<input {...getInputProps()} />
+						<img src={ImgOne} alt='imgOne' className='imgOne' />
+						<img src={ImgTwo} alt='imgTwo' className='imgTwo' />
+					</div>
 				</div>
+				<aside>
+					<ul>{files}</ul>
+				</aside>
+				<button onClick={handleClickSend} className='uploadsBtn'>
+					Upload
+				</button>
+				<br />
 			</div>
-			<aside>
-				<ul>{files}</ul>
-			</aside>
-			<button onClick={handleClickSend} className='uploadsBtn'>Upload</button><br/>
-			</div>
-			<img src={FUImage} alt='fileUploadBackground' className='uploadsFooter'/>
+			<img src={FUImage} alt='fileUploadBackground' className='uploadsFooter' />
 		</section>
 	);
 };
