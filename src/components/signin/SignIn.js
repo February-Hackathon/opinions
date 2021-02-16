@@ -13,7 +13,7 @@ const SignIn = ({ loggedIn, setLoggedIn }) => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		Axios({
-			url: 'https://storytime-drf.herokuapp.com/token/login/',
+			url: 'https://second-opinion-drf.herokuapp.com/token/login/',
 			method: 'POST',
 			data: formState,
 		}).then((res) => {

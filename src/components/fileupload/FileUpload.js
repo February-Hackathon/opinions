@@ -16,7 +16,7 @@ const FileUpload = ({ loggedIn }) => {
 	));
 	const handleClickSend = (event) => {
 		event.preventDefault();
-		const url = 'http://localhost:8000/pdocs/';
+		const url = 'https://second-opinion-drf.herokuapp.com/pdocs/';
 		const headers = { Authorization: `token ${localStorage.token}` };
 		console.log(localStorage.token);
 		Axios({

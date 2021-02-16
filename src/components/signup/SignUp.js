@@ -16,7 +16,7 @@ const SignUp = () => {
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		Axios({
-			url: 'https://storytime-drf.herokuapp.com/users/',
+			url: 'https://second-opinion-drf.herokuapp.com/users/',
 			method: 'POST',
 			data: formState,
 		}).then(() => {
@@ -42,7 +42,7 @@ const SignUp = () => {
 					/>
 					<br />
 					<input
-						id='registrationEmailInput'
+						id='email'
 						onChange={handleChange}
 						value={formState.email}
 						placeholder='Enter Email'
@@ -50,7 +50,7 @@ const SignUp = () => {
 					/>
 					<br />
 					<input
-						id='registrationPasswordInput'
+						id='password'
 						onChange={handleChange}
 						value={formState.password}
 						placeholder='Create Password'
