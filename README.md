@@ -22,7 +22,7 @@ An app to get second opinion's from specialists. This project is a solution for 
 
 [Second Opinion](https://second-opinion.netlify.app/)
 
-WireFrames
+## WireFrames
 
 [Second Opinion Figma](https://www.figma.com/file/gDTcG1LilVlZk4KwndJCgM/2nd-Opinion?node-id=0%3A1)
 
