@@ -31,7 +31,7 @@ const SignIn = ({ loggedIn, setLoggedIn }) => {
 	return (
 		<div>
 			<div className='body'>
-				<div className='signinTitle'>Log In</div>
+				<div className='signinTitle'>Sign in</div>
 				<form onSubmit={handleSubmit}>
 					<label htmlFor='email' className='emailLabel'>
 						{' '}
@@ -55,7 +55,7 @@ const SignIn = ({ loggedIn, setLoggedIn }) => {
 						className='passwordInput'
 					/>
 					<button type='submit' className='signinSubmit'>
-						Submit
+						Login
 					</button>
 				</form>
 				<div className='register'>

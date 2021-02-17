@@ -1,402 +1,55 @@
+.signinTitle {
+    font-family: Fjalla One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    color: #5E75FF;
+}
+.emailInput {
+    border-bottom: 1px solid #000000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.passwordInput {
+    border-bottom: 1px solid #000000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.signinSubmit {
+    background: #AA8CFF;
+    border-radius: 4px;
+    color: white;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+}
+.registrationTitle {
+    color: #5E75FF;
+}
+.registration {
+    color: #5E75FF;
+}
+
 @media only screen and (max-width: 600px) {
-
-    .body {
-        position: absolute;
-        width: 100%;
-        margin: 0 auto;
-        top: -30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .signinTitle {
-        position: absolute;
-        height: 49px;
-        width: 150px;
-        left: 115px;
-        top: 130px;
-        /* border-radius: 0px; */
-        font-family: Fjalla One;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 49px;
-        color: #2CB4FF;
-    }
-
-    .emailInput {
-        position: absolute;
-        width: 300px;
-        height: 40px;
-        left: 55px;
-        top: 210px;
-        border-radius: 3px;
-    }
-
-    .passwordInput {
-        position: absolute;
-        width: 300px;
-        height: 40px;
-        left: 55px;
-        top: 300px;
-        border-radius: 3px;
-    }
-
-    .signinSubmit {
-        position: absolute;
-        width: 257px;
-        height: 35px;
-        left: 75px;
-        top: 390px;
-        background: #AA8CFF;
-        border-radius: 4px;
-        border: none;
-		color: white;
-	}
-
-    .signinSubmit:hover {
-		cursor: pointer;
-		background-color: #7c4dff;
-	}
-
-    .register {
-        position: absolute;
-        width: 257px;
-        height: 35px;
-        left: 60px;
-        top: 480px;
-     }
-
-    #signIn-img {
-        position: absolute;
-        width: 200px;
-        height: 257px;
-        left: 7px;
-        top: 550px;
-        /* background: url(src/pics/signin_pic.png); */
-     } 
+    
 }
 
 @media only screen and (min-width: 600px) {
-    .body {
-        position: absolute;
-        width: 100%;
-        margin: 0 auto;
-        top: 25px;
-        left: -25px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 
-    .signinTitle {
-        position: absolute;
-        height: 49px;
-        width: 150px;
-        left: 310px;
-        top: 120px;
-        /* border-radius: 0px; */
-        font-family: Fjalla One;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 45px;
-        line-height: 49px;
-        color: #2CB4FF;
-    }
-
-    #email {
-        position: absolute;
-        width: 300px;
-        height: 40px;
-        left: 240px;
-        top: 210px;
-        border-radius: 3px;
-    }
-
-    #password {
-        position: absolute;
-        width: 300px;
-        height: 40px;
-        left: 240px;
-        top: 300px;
-        border-radius: 3px;
-    }
-
-    .signinSubmit {
-        position: absolute;
-        width: 250px;
-        height: 45px;
-        left: 265px;
-        top: 390px;
-        background: #AA8CFF;
-        border-radius: 4px;
-        border: none;
-		color: white;
-	}
-
-    .signinSubmit:hover {
-		cursor: pointer;
-		background-color: #7c4dff;
-	}
-
-    #signIn-img {
-        position: absolute;
-        width: 200px;
-        height: 257px;
-        left: 7px;
-        top: 760px;
-        /* background: url(src/pics/signin_pic.png); */
-     } 
-
-     .register {
-        position: absolute;
-        width: 257px;
-        height: 35px;
-        left: 260px;
-        top: 490px;
-     }
 }
 
 @media only screen and (min-width: 768px) {
-    .body {
-        position: absolute;
-        width: 100%;
-        margin: 0 auto;
-        top: 30px;
-        left: 28vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .signinTitle {
-        position: absolute;
-        height: 49px;
-        width: 150px;
-        left: 130px;
-        top: 130px;
-        /* border-radius: 0px; */
-        font-family: Fjalla One;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 45px;
-        line-height: 49px;
-        color: #2CB4FF;
-    }
-
-    #email {
-        position: absolute;
-        width: 300px;
-        height: 40px;
-        left: 55px;
-        top: 210px;
-        border-radius: 3px;
-    }
-
-    #password {
-        position: absolute;
-        width: 300px;
-        height: 40px;
-        left: 55px;
-        top: 300px;
-        border-radius: 3px;
-    }
-
-    .signinSubmit {
-        position: absolute;
-        width: 257px;
-        height: 45px;
-        left: 75px;
-        top: 390px;
-        background: #AA8CFF;
-        border-radius: 4px;
-        border: none;
-		color: white;
-	}
-
-    .signinSubmit:hover {
-		cursor: pointer;
-		background-color: #7c4dff;
-	}
-
-    .register {
-        position: absolute;
-        width: 257px;
-        height: 35px;
-        left: 75px;
-        top: 480px;
-     }
-
-    #signIn-img {
-        position: absolute;
-        width: 200px;
-        height: 257px;
-        left: 7px;
-        top: 780px;
-        /* background: url(src/pics/signin_pic.png); */
-     } 
+    
 }
 
 @media only screen and (min-width: 992px) {
-        .body {
-        position: absolute;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 200px;
-        height: 257px;
-        left: 15vw;
-        /* left: 7px; */
-        top: 30px;
-    }
-
-    .signinTitle {
-        position: absolute;
-        height: 49px;
-        width: 190px;
-        left: 290px;
-        top: 120px;
-        /* border-radius: 0px; */
-        font-family: Fjalla One;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
-        line-height: 49px;
-        color: #2CB4FF;
-    }
-
-    #email {
-        position: absolute;
-        width: 300px;
-        height: 40px;
-        left: 240px;
-        top: 210px;
-        border-radius: 3px;
-    }
-
-    #password {
-        position: absolute;
-        width: 300px;
-        height: 40px;
-        left: 240px;
-        top: 300px;
-        border-radius: 3px;
-    }
-
-    .signinSubmit {
-        position: absolute;
-        width: 257px;
-        height: 45px;
-        left: 265px;
-        top: 390px;
-        background: #AA8CFF;
-        border-radius: 4px;
-        border: none;
-		color: white;
-	}
-
-    .signinSubmit:hover {
-		cursor: pointer;
-		background-color: #7c4dff;
-	}
-
-    #signIn-img {
-        position: absolute;
-        width: 200px;
-        height: 257px;
-        left: 7px;
-        top: 760px;
-        /* background: url(src/pics/signin_pic.png); */
-     } 
-
-     .register {
-        position: absolute;
-        width: 257px;
-        height: 35px;
-        left: 260px;
-        top: 490px;
-     }
+    
 }
 
 @media only screen and (min-width: 1200px) {
-    .body {
-    position: absolute;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 257px;
-    /* left: 7px; */
-    top: 0;
+    
 }
-
-.signinTitle {
-    position: absolute;
-    height: 49px;
-    width: 190px;
-    left: 290px;
-    top: 120px;
-    font-family: Fjalla One;
-    /* border-radius: 0px; *
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 49px;
-    color: #2CB4FF;
-}
-
-#email {
-    position: absolute;
-    width: 300px;
-    height: 40px;
-    left: 240px;
-    top: 210px;
-    border-radius: 3px;
-}
-
-#password {
-    position: absolute;
-    width: 300px;
-    height: 40px;
-    left: 240px;
-    top: 300px;
-    border-radius: 3px;
-}
-
-.signinSubmit {
-    position: absolute;
-    width: 257px;
-    height: 45px;
-    left: 265px;
-    top: 390px;
-    background: #AA8CFF;
-    border-radius: 4px;
-
-}
-
-#signIn-img {
-    position: absolute;
-    width: 200px;
-    height: 257px;
-    left: 7px;
-    top: 760px;
-    /* background: url(src/pics/signin_pic.png); */
- } 
-
- .register {
-    position: absolute;
-    width: 257px;
-    height: 35px;
-    left: 260px;
-    top: 490px;
- }
-}
-
