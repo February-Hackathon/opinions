@@ -13,7 +13,20 @@
 	letter-spacing: 0.05em;
 	color: #5e75ff;
 }
-.usernameInput {
+
+input {
+	width: 257px;
+	/* height: 0px; */
+	left: 79px;
+	top: 342px;
+
+	border: 1px solid #000000;
+
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+/* .usernameInput {
 	border-bottom: 1px solid #000000;
 	border-top: none;
 	border-left: none;
@@ -36,7 +49,7 @@
 	border-top: none;
 	border-left: none;
 	border-right: none;
-}
+} */
 .registrationFormSubmit {
 	background: #aa8cff;
 	border-radius: 4px;
