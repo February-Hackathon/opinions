@@ -37,7 +37,7 @@ const SignUp = () => {
 						id='username'
 						onChange={handleChange}
 						value={formState.username}
-						placeholder='Create Username'
+						placeholder='Username'
 						className='usernameInput'
 					/>
 
@@ -45,7 +45,7 @@ const SignUp = () => {
 						id='email'
 						onChange={handleChange}
 						value={formState.email}
-						placeholder='Enter Email'
+						placeholder='Email'
 						className='registrationEmailInput'
 					/>
 
@@ -53,7 +53,7 @@ const SignUp = () => {
 						id='password'
 						onChange={handleChange}
 						value={formState.password}
-						placeholder='Create Password'
+						placeholder='Password'
 						className='registrationPasswordInput'
 					/>
 
