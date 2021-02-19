@@ -64,6 +64,7 @@ const SignUp = () => {
 						placeholder='Confirm Password'
 						className='re_passwordInput'
 					/>
+					<br />
 					<button type='submit' className='registrationFormSubmit'>
 						Join us &hearts;
 					</button>
