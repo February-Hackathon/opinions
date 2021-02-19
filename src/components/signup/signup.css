@@ -1,7 +1,15 @@
 .body2 {
 	display: flex;
 	flex-direction: column;
-	padding: 100px;
+	padding-top: 30px;
+}
+
+.form {
+	text-align: center;
+	align-items: center;
+	padding: 20px 0 0 0;
+	display: flex;
+	flex-direction: column;
 }
 
 .signupTitle {
@@ -14,49 +22,43 @@
 	color: #5e75ff;
 }
 
+.qualification {
+	width: 245px;
+	padding-top: 1rem;
+	font-family: 'Open Sans';
+	font-size: 0.75rem;
+}
 input {
 	width: 257px;
-	/* height: 0px; */
 	left: 79px;
 	top: 342px;
-
+	padding: 0.5rem;
 	border: 1px solid #000000;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
 
-	border-top: none;
-	border-left: none;
-	border-right: none;
+input::placeholder {
+	font-family: 'Open Sans';
+	color: #c4c4c4;
 }
-/* .usernameInput {
-	border-bottom: 1px solid #000000;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-}
-.registrationEmailInput {
-	border-bottom: 1px solid #000000;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-}
-.registrationPasswordInput {
-	border-bottom: 1px solid #000000;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-}
-.re_passwordInput {
-	border-bottom: 1px solid #000000;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-} */
 .registrationFormSubmit {
-	background: #aa8cff;
+	margin: 25px;
+	font-family: 'Open Sans';
+	width: 175px;
+	height: 35px;
+	left: 21px;
+	top: 352px;
+	border: none;
+	background-color: hsl(256, 100%, 77%);
 	border-radius: 4px;
 	color: white;
-	font-family: Open Sans;
-	font-style: normal;
-	font-weight: 600;
+}
+
+.registrationFormSubmit:hover {
+	cursor: pointer;
+	background-color: #7c4dff;
 }
 .qualification {
 	color: #5e75ff;
