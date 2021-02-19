@@ -1,64 +1,64 @@
+.body2 {
+	display: flex;
+	flex-direction: column;
+	padding: 100px;
+}
+
 .signupTitle {
 	font-family: Fjalla One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 45px;
-    letter-spacing: 0.05em;
-    color: #5E75FF;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 45px;
+	letter-spacing: 0.05em;
+	color: #5e75ff;
 }
 .usernameInput {
 	border-bottom: 1px solid #000000;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
 }
 .registrationEmailInput {
 	border-bottom: 1px solid #000000;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
 }
 .registrationPasswordInput {
 	border-bottom: 1px solid #000000;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
 }
 .re_passwordInput {
 	border-bottom: 1px solid #000000;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
 }
 .registrationFormSubmit {
-	background: #AA8CFF;
-    border-radius: 4px;
-    color: white;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
+	background: #aa8cff;
+	border-radius: 4px;
+	color: white;
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 600;
 }
 .qualification {
-	color: #5E75FF;
-
+	color: #5e75ff;
 }
 @media only screen and (max-width: 600px) {
-    
 }
 
 @media only screen and (min-width: 600px) {
-
 }
 
 @media only screen and (min-width: 768px) {
-    
 }
 
 @media only screen and (min-width: 992px) {
-    
 }
 
 @media only screen and (min-width: 1200px) {
-    
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Axios from 'axios';
 import { useHistory } from 'react-router-dom';
-import './signup.css'
+import './signup.css';
 import signUpImg from './signup_pic.png';
 
 const SignUp = () => {
@@ -28,8 +28,8 @@ const SignUp = () => {
 		setFormState({ ...formState, [event.target.id]: event.target.value });
 	};
 
-    return (
-        <div>
+	return (
+		<div>
 			<div className='body2'>
 				<div className='signupTitle'>Sign Up</div>
 				<form onSubmit={handleSubmit}>
@@ -65,17 +65,17 @@ const SignUp = () => {
 						className='re_passwordInput'
 					/>
 					<button type='submit' className='registrationFormSubmit'>
-						Submit
+						Join us &hearts;
 					</button>
 				</form>
 				{/* <div className='qualification'>Email must be unique</div>
 				<br /> */}
 				<div className='qualification'>
-					*Password must be combination of at least 8 letters and numbers 
+					*Password must be combination of at least 8 letters and numbers
 				</div>
 			</div>
 			<div id='signUp-img'>
-				<img src={signUpImg} alt='signUpImg'/>
+				<img src={signUpImg} alt='signUpImg' />
 			</div>
 		</div>
 	);
