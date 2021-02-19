@@ -32,7 +32,7 @@ const SignUp = () => {
 		<div>
 			<div className='body2'>
 				<div className='signupTitle'>Sign Up</div>
-				<form onSubmit={handleSubmit}>
+				<form className='form' onSubmit={handleSubmit}>
 					<input
 						id='username'
 						onChange={handleChange}
@@ -40,7 +40,7 @@ const SignUp = () => {
 						placeholder='Create Username'
 						className='usernameInput'
 					/>
-					<br />
+
 					<input
 						id='email'
 						onChange={handleChange}
@@ -48,7 +48,7 @@ const SignUp = () => {
 						placeholder='Enter Email'
 						className='registrationEmailInput'
 					/>
-					<br />
+
 					<input
 						id='password'
 						onChange={handleChange}
@@ -56,7 +56,7 @@ const SignUp = () => {
 						placeholder='Create Password'
 						className='registrationPasswordInput'
 					/>
-					<br />
+
 					<input
 						id='re_password'
 						onChange={handleChange}
@@ -64,16 +64,13 @@ const SignUp = () => {
 						placeholder='Confirm Password'
 						className='re_passwordInput'
 					/>
-					<br />
+					<div className='qualification'>
+						*Password must be combination of at least 8 letters and numbers
+					</div>
 					<button type='submit' className='registrationFormSubmit'>
 						Join us &hearts;
 					</button>
 				</form>
-				{/* <div className='qualification'>Email must be unique</div>
-				<br /> */}
-				<div className='qualification'>
-					*Password must be combination of at least 8 letters and numbers
-				</div>
 			</div>
 			<div id='signUp-img'>
 				<img src={signUpImg} alt='signUpImg' />
