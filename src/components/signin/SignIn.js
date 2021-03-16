@@ -49,6 +49,7 @@ const SignIn = ({ loggedIn, setLoggedIn }) => {
 					</label>
 					<input
 						id='password'
+						type='password'
 						onChange={handleChange}
 						value={formState.password}
 						placeholder='Password'
