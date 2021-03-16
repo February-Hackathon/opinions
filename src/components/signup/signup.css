@@ -27,6 +27,7 @@
 	padding-top: 1rem;
 	font-family: 'Open Sans';
 	font-size: 0.75rem;
+	color: #5e75ff;
 }
 input {
 	width: 257px;
@@ -60,9 +61,7 @@ input::placeholder {
 	cursor: pointer;
 	background-color: #7c4dff;
 }
-.qualification {
-	color: #5e75ff;
-}
+
 @media only screen and (max-width: 600px) {
 }
 
