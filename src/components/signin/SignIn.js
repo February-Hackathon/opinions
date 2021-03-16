@@ -5,7 +5,7 @@ import './signin.css';
 import signInImg from './signin_pic.png';
 
 const SignIn = ({ loggedIn, setLoggedIn }) => {
-    const initialState = {
+	const initialState = {
 		email: '',
 		password: '',
 	};
@@ -31,8 +31,8 @@ const SignIn = ({ loggedIn, setLoggedIn }) => {
 	return (
 		<div>
 			<div className='body'>
-				<div className='signinTitle'>Sign in</div>
-				<form onSubmit={handleSubmit}>
+				<div className='signinTitle'>Log In</div>
+				<form className='form' onSubmit={handleSubmit}>
 					<label htmlFor='email' className='emailLabel'>
 						{' '}
 					</label>
@@ -60,15 +60,17 @@ const SignIn = ({ loggedIn, setLoggedIn }) => {
 					</button>
 				</form>
 				<div className='register'>
-				<div className='registrationTitle'>Not Signed up? Register Below:</div>
-				<br />
-				<Link to='/signup' className='registration'>
-					Sign Up
-				</Link>
+					<div className='registrationTitle'>
+						Not Signed up? Register Below:
+					</div>
+					<br />
+					<Link to='/signup' className='registration'>
+						Sign Up
+					</Link>
 				</div>
 			</div>
 			<div id='signIn-img'>
-				<img src={signInImg} alt='signInImg'/>
+				<img src={signInImg} alt='signInImg' />
 			</div>
 		</div>
 	);
