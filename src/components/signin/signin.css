@@ -1,5 +1,6 @@
 .body {
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 	padding-top: 30px;
 }
@@ -25,21 +26,26 @@
 	border-left: none;
 	border-right: none;
 }
-/* .signinSubmit {
-	background: #aa8cff;
-	border-radius: 4px;
-	color: white;
-	font-family: Open Sans;
-	font-style: normal;
-	font-weight: 600;
-} */
-.registrationTitle {
+
+.register {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: space-around;
+	width: 245px;
+	padding-top: 1rem;
+	font-family: 'Open Sans';
+	font-size: 0.75rem;
 	color: #5e75ff;
 }
+
 .registration {
 	color: #5e75ff;
 }
 
+.registrationTitle {
+	justify-content: right;
+}
 .signinSubmit {
 	margin: 25px;
 	font-family: 'Open Sans';
